@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONNECTPAGS</title>
+
+<style>
+    /* Remove margens da página */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* Container da iframe */
+    .iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* A iframe ocupa toda a tela */
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Ajustes extras para mobile */
+    @media (max-width: 768px) {
+        iframe {
+            height: 100vh;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="iframe-container">
+    <iframe src="https://listinsolucoes.com.br/landing_registration" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
